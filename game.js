@@ -46,11 +46,7 @@ $(".btn").click(function () {
 });
 
 $(document).keypress(function () {
-  if (!gameStarted) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    gameStarted = true;
-  }
+  startGame();
 });
 
 function checkAnswer(currentLevel) {
@@ -85,15 +81,10 @@ function checkAnswer(currentLevel) {
     userLevel = 0;
   }
 
-/* 
-
-1. Create a new function called startOver().
-
-2. Call startOver() if the user gets the sequence wrong.
-
-3. Inside this function, you'll need to reset the values of level, gamePattern and started variables.
-
-
-
-
-*/ 
+function startGame() {
+  if (!gameStarted) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    gameStarted = true;
+  }
+}

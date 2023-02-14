@@ -30,6 +30,18 @@ footer {
   border-radius: 20%;
 }
 
+#start {
+  background-color: black;
+    border: none;
+    border-radius: 10%;
+    color: #FEF2BF;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
